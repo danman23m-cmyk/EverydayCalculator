@@ -1,1 +1,238 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Average Calculator – Find the Average of Numbers | Everyday Calculators</title><meta name="description" content="Calculate the average of a list of numbers quickly with this free average calculator."><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Everyday Calculators</a><nav class="navlinks"><a href="index.html">All Calculators</a></nav></div></header><main><div class="container"><div class="tool"><h1>Average Calculator</h1><p>Enter numbers separated by commas to calculate their average.</p><label for="numbers">Numbers</label><input id="numbers" type="text" placeholder="10, 20, 30, 40"><div class="actions"><button class="btn" onclick="average()">Calculate Average</button></div><div id="result" class="result"></div></div><section class="info"><h2>How to calculate an average</h2><p>Add all the numbers together, then divide the total by the number of values.</p><p><strong>Average = Sum of Values ÷ Number of Values</strong></p><h3>Example</h3><p>The average of 10, 20, and 30 is 20.</p></section></div></main><footer>Everyday Calculators — Free online calculator tools.</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Average Calculator – Find the Mean of Numbers | Everyday Calculator</title>
+
+<meta name="description" content="Use this free average calculator to find the mean of a list of numbers. Enter numbers separated by commas to calculate the average instantly.">
+
+<link rel="canonical" href="https://danman23m-cmyk.github.io/EverydayCalculator/average-calculator.html">
+
+<meta property="og:title" content="Average Calculator – Everyday Calculator">
+<meta property="og:description" content="Calculate the average or mean of numbers quickly with this free online calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danman23m-cmyk.github.io/EverydayCalculator/average-calculator.html">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Average Calculator",
+  "url":"https://danman23m-cmyk.github.io/EverydayCalculator/average-calculator.html",
+  "applicationCategory":"Calculator",
+  "operatingSystem":"All",
+  "description":"A free online average calculator for finding the mean of a list of numbers."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How do you calculate an average?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Add all the numbers together and divide the sum by the number of values."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What is the average of 10, 20, and 30?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"The average of 10, 20, and 30 is 20."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What is another name for average?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"In basic mathematics, average commonly refers to the arithmetic mean."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I enter decimal numbers?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. You can enter whole numbers or decimal numbers separated by commas."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Everyday Calculator</a>
+
+    <nav class="navlinks">
+      <a href="index.html">Calculators</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <div class="tool">
+
+      <h1>Average Calculator</h1>
+
+      <p>
+        Find the average, or arithmetic mean, of a list of numbers.
+        Enter your numbers separated by commas.
+      </p>
+
+      <div class="form-grid">
+
+        <div>
+          <label for="numbers">Numbers</label>
+          <input
+            id="numbers"
+            type="text"
+            placeholder="10, 20, 30, 40"
+          >
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="average()">
+          Calculate Average
+        </button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+    </div>
+
+    <section class="info">
+
+      <h2>How to Calculate an Average</h2>
+
+      <p>
+        The average, also called the arithmetic mean, is calculated
+        by adding all the numbers together and dividing the sum by
+        the number of values.
+      </p>
+
+      <p>
+        <strong>
+          Average = Sum of Numbers ÷ Number of Values
+        </strong>
+      </p>
+
+      <h3>Example</h3>
+
+      <p>
+        Suppose you have the numbers:
+        <strong>10, 20, 30, and 40</strong>.
+      </p>
+
+      <p>
+        First add them together:
+      </p>
+
+      <p>
+        10 + 20 + 30 + 40 = <strong>100</strong>
+      </p>
+
+      <p>
+        There are 4 numbers, so:
+      </p>
+
+      <p>
+        100 ÷ 4 = <strong>25</strong>
+      </p>
+
+      <p>
+        Therefore, the average is <strong>25</strong>.
+      </p>
+
+      <h3>How to Use This Calculator</h3>
+
+      <p>
+        <strong>1.</strong> Enter your numbers separated by commas.
+      </p>
+
+      <p>
+        <strong>2.</strong> Click <strong>Calculate Average</strong>.
+      </p>
+
+      <p>
+        <strong>3.</strong> The calculator will display the average.
+      </p>
+
+      <h2>Where Are Averages Used?</h2>
+
+      <p>
+        Averages are commonly used for grades, test scores, statistics,
+        measurements, expenses, sports statistics, and many other
+        everyday calculations.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How do you calculate an average?</h3>
+
+      <p>
+        Add all the numbers together and divide the result by the
+        number of values.
+      </p>
+
+      <h3>What is the average of 10, 20, and 30?</h3>
+
+      <p>
+        10 + 20 + 30 = 60. There are 3 numbers, so 60 ÷ 3 =
+        <strong>20</strong>.
+      </p>
+
+      <h3>What is another name for average?</h3>
+
+      <p>
+        In basic mathematics, average commonly refers to the
+        arithmetic mean.
+      </p>
+
+      <h3>Can I enter decimal numbers?</h3>
+
+      <p>
+        Yes. You can enter whole numbers or decimal numbers separated
+        by commas.
+      </p>
+
+      <h2>Related Calculators</h2>
+
+      <p>
+        <a href="percentage-calculator.html">Percentage Calculator</a> ·
+        <a href="tip-calculator.html">Tip Calculator</a> ·
+        <a href="discount-calculator.html">Discount Calculator</a> ·
+        <a href="sales-tax-calculator.html">Sales Tax Calculator</a>
+      </p>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Everyday Calculator — Free online calculators for everyday life.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
