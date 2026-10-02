@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danman23m-cmyk.github.io/EverydayCalculator/sitemap.xml
