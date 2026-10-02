@@ -1,1 +1,256 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Discount Calculator – Sale Price and Savings | Everyday Calculators</title><meta name="description" content="Calculate sale price and savings from a discount percentage with this free discount calculator."><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Everyday Calculators</a><nav class="navlinks"><a href="index.html">All Calculators</a></nav></div></header><main><div class="container"><div class="tool"><h1>Discount Calculator</h1><p>Find how much you save and the final sale price.</p><div class="form-grid"><div><label for="price">Original price ($)</label><input id="price" type="number" min="0" step="0.01" placeholder="100"></div><div><label for="discountRate">Discount (%)</label><input id="discountRate" type="number" min="0" step="0.1" placeholder="20"></div></div><div class="actions"><button class="btn" onclick="discount()">Calculate Discount</button></div><div id="result" class="result"></div></div><section class="info"><h2>How to calculate a discount</h2><p>Multiply the original price by the discount percentage to find the amount saved. Subtract the savings from the original price.</p><p><strong>Sale Price = Original Price − (Original Price × Discount ÷ 100)</strong></p></section></div></main><footer>Everyday Calculators — Free online calculator tools.</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Discount Calculator – Calculate Sale Prices & Savings | Everyday Calculator</title>
+
+<meta name="description" content="Use this free discount calculator to find your sale price and how much money you save after a percentage discount.">
+
+<link rel="canonical" href="https://danman23m-cmyk.github.io/EverydayCalculator/discount-calculator.html">
+
+<meta property="og:title" content="Discount Calculator – Everyday Calculator">
+<meta property="og:description" content="Calculate sale prices, discounts, and total savings quickly with this free online calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danman23m-cmyk.github.io/EverydayCalculator/discount-calculator.html">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Discount Calculator",
+  "url":"https://danman23m-cmyk.github.io/EverydayCalculator/discount-calculator.html",
+  "applicationCategory":"Calculator",
+  "operatingSystem":"All",
+  "description":"A free online discount calculator for finding sale prices and savings."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How do you calculate a discount?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Multiply the original price by the discount percentage expressed as a decimal. Subtract the discount amount from the original price to find the sale price."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What is 20% off $100?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"A 20% discount on $100 saves $20, making the sale price $80."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How much do I save with a discount?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Multiply the original price by the discount percentage divided by 100. For example, a 20% discount on $100 saves $20."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I use this discount calculator on my phone?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. The discount calculator works on modern desktop and mobile web browsers."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Everyday Calculator</a>
+
+    <nav class="navlinks">
+      <a href="index.html">Calculators</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <div class="tool">
+
+      <h1>Discount Calculator</h1>
+
+      <p>
+        Calculate how much you save and find the final sale price
+        after applying a percentage discount.
+      </p>
+
+      <div class="form-grid">
+
+        <div>
+          <label for="price">Original Price ($)</label>
+          <input
+            id="price"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="100"
+          >
+        </div>
+
+        <div>
+          <label for="discountPercent">Discount (%)</label>
+          <input
+            id="discountPercent"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="20"
+          >
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="discount()">
+          Calculate Discount
+        </button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+    </div>
+
+    <section class="info">
+
+      <h2>How to Calculate a Discount</h2>
+
+      <p>
+        To calculate the amount saved, multiply the original price by
+        the discount percentage expressed as a decimal.
+      </p>
+
+      <p>
+        <strong>
+          Discount Amount = Original Price × (Discount ÷ 100)
+        </strong>
+      </p>
+
+      <p>
+        Then subtract the discount amount from the original price:
+      </p>
+
+      <p>
+        <strong>
+          Sale Price = Original Price − Discount Amount
+        </strong>
+      </p>
+
+      <h3>Example</h3>
+
+      <p>
+        Suppose an item costs <strong>$100</strong> and is on sale
+        for <strong>20% off</strong>.
+      </p>
+
+      <p>
+        Discount = $100 × 0.20 = <strong>$20</strong>
+      </p>
+
+      <p>
+        Sale Price = $100 − $20 = <strong>$80</strong>
+      </p>
+
+      <p>
+        You save <strong>$20</strong> and pay <strong>$80</strong>.
+      </p>
+
+      <h3>How to Use This Calculator</h3>
+
+      <p>
+        <strong>1.</strong> Enter the original price of the item.
+      </p>
+
+      <p>
+        <strong>2.</strong> Enter the discount percentage.
+      </p>
+
+      <p>
+        <strong>3.</strong> Click <strong>Calculate Discount</strong>.
+      </p>
+
+      <p>
+        The calculator will show your savings and final sale price.
+      </p>
+
+      <h2>Discounts in Everyday Life</h2>
+
+      <p>
+        Percentage discounts are commonly used during sales,
+        promotions, clearance events, coupons, and online shopping.
+        A discount calculator can help you quickly determine the
+        actual amount you will pay.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How do you calculate a discount?</h3>
+
+      <p>
+        Multiply the original price by the discount percentage divided
+        by 100. Then subtract the discount amount from the original price.
+      </p>
+
+      <h3>What is 20% off $100?</h3>
+
+      <p>
+        A 20% discount on $100 saves <strong>$20</strong>, so the sale
+        price is <strong>$80</strong>.
+      </p>
+
+      <h3>How much do I save with a discount?</h3>
+
+      <p>
+        Multiply the original price by the discount percentage divided
+        by 100.
+      </p>
+
+      <h3>Can I use this calculator on my phone?</h3>
+
+      <p>
+        Yes. The calculator works on both desktop and mobile browsers.
+      </p>
+
+      <h2>Related Calculators</h2>
+
+      <p>
+        <a href="percentage-calculator.html">Percentage Calculator</a> ·
+        <a href="tip-calculator.html">Tip Calculator</a> ·
+        <a href="sales-tax-calculator.html">Sales Tax Calculator</a> ·
+        <a href="average-calculator.html">Average Calculator</a>
+      </p>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Everyday Calculator — Free online calculators for everyday life.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
