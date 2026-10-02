@@ -1,1 +1,266 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tip Calculator – Calculate Tip and Split the Bill | Everyday Calculators</title><meta name="description" content="Calculate a restaurant tip, total bill, and cost per person with this free tip calculator."><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Everyday Calculators</a><nav class="navlinks"><a href="index.html">All Calculators</a></nav></div></header><main><div class="container"><div class="tool"><h1>Tip Calculator</h1><p>Calculate your tip, total bill, and amount per person.</p><div class="form-grid"><div><label for="bill">Bill amount ($)</label><input id="bill" type="number" min="0" step="0.01" placeholder="50"></div><div><label for="tipRate">Tip percentage (%)</label><input id="tipRate" type="number" min="0" step="0.1" placeholder="20"></div><div><label for="people">Number of people</label><input id="people" type="number" min="1" step="1" placeholder="2"></div></div><div class="actions"><button class="btn" onclick="tip()">Calculate Tip</button></div><div id="result" class="result"></div></div><section class="info"><h2>How to calculate a tip</h2><p>Multiply the bill by the tip percentage to find the tip amount. Add the tip to the bill to find the total.</p><p><strong>Tip = Bill × Tip Rate ÷ 100</strong></p></section></div></main><footer>Everyday Calculators — Free online calculator tools.</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Tip Calculator – Calculate Tips & Split the Bill | Everyday Calculator</title>
+
+<meta name="description" content="Use this free tip calculator to calculate a tip, total bill, and cost per person when splitting a bill.">
+
+<link rel="canonical" href="https://danman23m-cmyk.github.io/EverydayCalculator/tip-calculator.html">
+
+<meta property="og:title" content="Tip Calculator – Everyday Calculator">
+<meta property="og:description" content="Quickly calculate tips, total bills, and the cost per person.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danman23m-cmyk.github.io/EverydayCalculator/tip-calculator.html">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Tip Calculator",
+  "url":"https://danman23m-cmyk.github.io/EverydayCalculator/tip-calculator.html",
+  "applicationCategory":"Calculator",
+  "operatingSystem":"All",
+  "description":"A free online tip calculator for calculating tips, total bills, and the cost per person."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How much should I tip?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"A common restaurant tip is between 15% and 20%, although the appropriate amount can depend on the service and situation."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How do you calculate a tip?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Multiply the bill amount by the tip percentage expressed as a decimal. For example, a $50 bill with a 20% tip gives a $10 tip."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How do I split a bill?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Calculate the total bill including the tip, then divide the total by the number of people."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I use this tip calculator on my phone?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. The tip calculator works in modern desktop and mobile web browsers."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Everyday Calculator</a>
+
+    <nav class="navlinks">
+      <a href="index.html">Calculators</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <div class="tool">
+
+      <h1>Tip Calculator</h1>
+
+      <p>
+        Calculate your tip, total bill, and cost per person when splitting
+        a bill with friends or family.
+      </p>
+
+      <div class="form-grid">
+
+        <div>
+          <label for="bill">Bill Amount ($)</label>
+          <input
+            id="bill"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="50"
+          >
+        </div>
+
+        <div>
+          <label for="tipPercent">Tip Percentage (%)</label>
+          <input
+            id="tipPercent"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="20"
+          >
+        </div>
+
+        <div>
+          <label for="people">Number of People</label>
+          <input
+            id="people"
+            type="number"
+            min="1"
+            step="1"
+            placeholder="2"
+          >
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="tip()">
+          Calculate Tip
+        </button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+    </div>
+
+    <section class="info">
+
+      <h2>How to Calculate a Tip</h2>
+
+      <p>
+        To calculate a tip, multiply the bill amount by the tip percentage
+        converted to a decimal.
+      </p>
+
+      <p>
+        <strong>Tip = Bill Amount × (Tip Percentage ÷ 100)</strong>
+      </p>
+
+      <p>
+        To find the total bill:
+      </p>
+
+      <p>
+        <strong>Total = Bill Amount + Tip</strong>
+      </p>
+
+      <h3>Example</h3>
+
+      <p>
+        Suppose your restaurant bill is <strong>$50</strong> and you want
+        to leave a <strong>20%</strong> tip.
+      </p>
+
+      <p>
+        Tip = $50 × 0.20 = <strong>$10</strong>
+      </p>
+
+      <p>
+        Total = $50 + $10 = <strong>$60</strong>
+      </p>
+
+      <p>
+        If two people split the bill:
+      </p>
+
+      <p>
+        $60 ÷ 2 = <strong>$30 per person</strong>
+      </p>
+
+      <h3>How to Use This Calculator</h3>
+
+      <p>
+        <strong>1.</strong> Enter your bill amount.
+      </p>
+
+      <p>
+        <strong>2.</strong> Enter the tip percentage you want to leave.
+      </p>
+
+      <p>
+        <strong>3.</strong> Enter the number of people splitting the bill.
+      </p>
+
+      <p>
+        <strong>4.</strong> Click <strong>Calculate Tip</strong>.
+      </p>
+
+      <h2>Common Tip Percentages</h2>
+
+      <p>
+        Common restaurant tip amounts include <strong>15%</strong>,
+        <strong>18%</strong>, and <strong>20%</strong>. The appropriate
+        tip can vary depending on the service and situation.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How much should I tip?</h3>
+
+      <p>
+        A common restaurant tip is between 15% and 20%, although the
+        appropriate amount depends on the situation and service.
+      </p>
+
+      <h3>How do you calculate a tip?</h3>
+
+      <p>
+        Multiply the bill by the tip percentage expressed as a decimal.
+        For example, 20% is 0.20.
+      </p>
+
+      <h3>How do I split a bill?</h3>
+
+      <p>
+        Add the tip to the original bill and divide the total by the
+        number of people.
+      </p>
+
+      <h3>Can I use this calculator on my phone?</h3>
+
+      <p>
+        Yes. The calculator works on both desktop and mobile browsers.
+      </p>
+
+      <h2>Related Calculators</h2>
+
+      <p>
+        <a href="percentage-calculator.html">Percentage Calculator</a> ·
+        <a href="discount-calculator.html">Discount Calculator</a> ·
+        <a href="sales-tax-calculator.html">Sales Tax Calculator</a> ·
+        <a href="average-calculator.html">Average Calculator</a>
+      </p>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Everyday Calculator — Free online calculators for everyday life.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
