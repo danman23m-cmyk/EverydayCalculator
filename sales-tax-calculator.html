@@ -1,1 +1,250 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sales Tax Calculator – Calculate Tax and Total Price | Everyday Calculators</title><meta name="description" content="Calculate sales tax and the final price of an item with this free sales tax calculator."><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Everyday Calculators</a><nav class="navlinks"><a href="index.html">All Calculators</a></nav></div></header><main><div class="container"><div class="tool"><h1>Sales Tax Calculator</h1><p>Calculate sales tax and the final price after tax.</p><div class="form-grid"><div><label for="taxPrice">Price before tax ($)</label><input id="taxPrice" type="number" min="0" step="0.01" placeholder="100"></div><div><label for="taxRate">Tax rate (%)</label><input id="taxRate" type="number" min="0" step="0.001" placeholder="7.5"></div></div><div class="actions"><button class="btn" onclick="salesTax()">Calculate Sales Tax</button></div><div id="result" class="result"></div></div><section class="info"><h2>How to calculate sales tax</h2><p>Multiply the price before tax by the tax rate to find the tax amount, then add the tax to the original price.</p><p><strong>Tax = Price × Tax Rate ÷ 100</strong></p></section></div></main><footer>Everyday Calculators — Free online calculator tools.</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Sales Tax Calculator – Calculate Tax & Total Price | Everyday Calculator</title>
+
+<meta name="description" content="Use this free sales tax calculator to calculate the sales tax and final total price of an item. Enter a price and tax rate to get your answer instantly.">
+
+<link rel="canonical" href="https://danman23m-cmyk.github.io/EverydayCalculator/sales-tax-calculator.html">
+
+<meta property="og:title" content="Sales Tax Calculator – Everyday Calculator">
+<meta property="og:description" content="Calculate sales tax and the final price of an item quickly with this free online calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danman23m-cmyk.github.io/EverydayCalculator/sales-tax-calculator.html">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Sales Tax Calculator",
+  "url":"https://danman23m-cmyk.github.io/EverydayCalculator/sales-tax-calculator.html",
+  "applicationCategory":"Calculator",
+  "operatingSystem":"All",
+  "description":"A free online sales tax calculator for calculating tax and final purchase price."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How do you calculate sales tax?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Multiply the item price by the sales tax rate divided by 100. Add the resulting tax amount to the original price to find the total."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What is 7.5% sales tax on $100?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"A 7.5% sales tax on $100 is $7.50, making the total price $107.50."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How do I calculate the total price after sales tax?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Calculate the sales tax amount first, then add it to the original price. Total Price equals Original Price plus Sales Tax."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I use this sales tax calculator on my phone?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. The sales tax calculator works on modern desktop and mobile web browsers."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Everyday Calculator</a>
+
+    <nav class="navlinks">
+      <a href="index.html">Calculators</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <div class="tool">
+
+      <h1>Sales Tax Calculator</h1>
+
+      <p>
+        Calculate the sales tax and final price of an item.
+        Enter the original price and tax rate below.
+      </p>
+
+      <div class="form-grid">
+
+        <div>
+          <label for="price">Price ($)</label>
+          <input
+            id="price"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="100"
+          >
+        </div>
+
+        <div>
+          <label for="taxRate">Sales Tax Rate (%)</label>
+          <input
+            id="taxRate"
+            type="number"
+            min="0"
+            step="any"
+            placeholder="7.5"
+          >
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="salesTax()">
+          Calculate Sales Tax
+        </button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+    </div>
+
+    <section class="info">
+
+      <h2>How to Calculate Sales Tax</h2>
+
+      <p>
+        Sales tax is calculated by multiplying the original price
+        by the tax rate expressed as a decimal.
+      </p>
+
+      <p>
+        <strong>
+          Sales Tax = Price × (Tax Rate ÷ 100)
+        </strong>
+      </p>
+
+      <p>
+        To find the final price, add the sales tax to the original price:
+      </p>
+
+      <p>
+        <strong>
+          Total Price = Price + Sales Tax
+        </strong>
+      </p>
+
+      <h3>Example</h3>
+
+      <p>
+        Suppose an item costs <strong>$100</strong> and the sales tax
+        rate is <strong>7.5%</strong>.
+      </p>
+
+      <p>
+        Sales Tax = $100 × 0.075 = <strong>$7.50</strong>
+      </p>
+
+      <p>
+        Total Price = $100 + $7.50 = <strong>$107.50</strong>
+      </p>
+
+      <h3>How to Use This Calculator</h3>
+
+      <p>
+        <strong>1.</strong> Enter the item's original price.
+      </p>
+
+      <p>
+        <strong>2.</strong> Enter the sales tax rate as a percentage.
+      </p>
+
+      <p>
+        <strong>3.</strong> Click <strong>Calculate Sales Tax</strong>.
+      </p>
+
+      <p>
+        The calculator will show the tax amount and final total.
+      </p>
+
+      <h2>Why Sales Tax Matters</h2>
+
+      <p>
+        Sales tax can make the final price of an item higher than
+        its listed price. Calculating the tax before buying something
+        can help you estimate the actual amount you will pay.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How do you calculate sales tax?</h3>
+
+      <p>
+        Multiply the price by the sales tax rate divided by 100.
+        For example, a 7.5% tax rate is represented as 0.075.
+      </p>
+
+      <h3>What is 7.5% sales tax on $100?</h3>
+
+      <p>
+        The sales tax is <strong>$7.50</strong>, making the total
+        price <strong>$107.50</strong>.
+      </p>
+
+      <h3>How do I calculate the total price after sales tax?</h3>
+
+      <p>
+        Add the sales tax amount to the original price.
+      </p>
+
+      <h3>Can I use this calculator on my phone?</h3>
+
+      <p>
+        Yes. The calculator works on both desktop and mobile browsers.
+      </p>
+
+      <h2>Related Calculators</h2>
+
+      <p>
+        <a href="percentage-calculator.html">Percentage Calculator</a> ·
+        <a href="discount-calculator.html">Discount Calculator</a> ·
+        <a href="tip-calculator.html">Tip Calculator</a> ·
+        <a href="average-calculator.html">Average Calculator</a>
+      </p>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Everyday Calculator — Free online calculators for everyday life.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
