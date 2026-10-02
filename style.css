@@ -1,0 +1,27 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#f7f8fa;line-height:1.6}
+.container{width:min(1000px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid #ddd}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:700;font-size:1.15rem;color:#222;text-decoration:none}
+.navlinks{display:flex;gap:20px}
+.navlinks a{color:#444;text-decoration:none}
+.hero{padding:64px 0 48px;background:#fff}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:0 0 16px}
+.hero p{max-width:680px;font-size:1.1rem;color:#555}
+section{padding:42px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card,.tool,.info{background:#fff;border:1px solid #ddd;border-radius:12px;padding:24px}
+.card h3{margin-top:0}
+.btn{display:inline-block;background:#222;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+.tool{max-width:700px;margin:40px auto}
+.tool h1{margin-top:0}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+label{display:block;font-weight:600;margin-bottom:6px}
+input{width:100%;padding:12px;border:1px solid #bbb;border-radius:7px;font-size:16px}
+.actions{margin-top:20px}
+button{border:0;cursor:pointer;font:inherit}
+.result{margin-top:20px;padding:16px;border-radius:8px;background:#f0f2f4;font-weight:700;min-height:24px}
+.info{margin:30px auto 50px}
+footer{text-align:center;padding:30px 15px;border-top:1px solid #ddd;color:#666;background:#fff}
+@media(max-width:600px){.nav{align-items:flex-start;gap:15px;flex-direction:column}.hero{padding:45px 0 35px}}
