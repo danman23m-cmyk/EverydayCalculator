@@ -1,1 +1,229 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Percentage Calculator – Calculate Percentages | Everyday Calculators</title><meta name="description" content="Calculate what percentage one number is of another with this free percentage calculator."><link rel="stylesheet" href="style.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Everyday Calculators</a><nav class="navlinks"><a href="index.html">All Calculators</a></nav></div></header><main><div class="container"><div class="tool"><h1>Percentage Calculator</h1><p>Find what percentage one number is of another.</p><div class="form-grid"><div><label for="part">Part</label><input id="part" type="number" step="any" placeholder="25"></div><div><label for="whole">Whole</label><input id="whole" type="number" step="any" placeholder="100"></div></div><div class="actions"><button class="btn" onclick="percentage()">Calculate Percentage</button></div><div id="result" class="result"></div></div><section class="info"><h2>How to calculate a percentage</h2><p>Divide the part by the whole and multiply by 100.</p><p><strong>Percentage = (Part ÷ Whole) × 100</strong></p><h3>Example</h3><p>25 out of 100 is 25%.</p></section></div></main><footer>Everyday Calculators — Free online calculator tools.</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Percentage Calculator – Find Percentages Easily | Everyday Calculator</title>
+
+<meta name="description" content="Use this free percentage calculator to find percentages quickly. Calculate what percent one number is of another with a simple formula and example.">
+
+<link rel="canonical" href="https://danman23m-cmyk.github.io/EverydayCalculator/percentage-calculator.html">
+
+<meta property="og:title" content="Percentage Calculator – Everyday Calculator">
+<meta property="og:description" content="Quickly calculate percentages with this free, simple online percentage calculator.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://danman23m-cmyk.github.io/EverydayCalculator/percentage-calculator.html">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Percentage Calculator",
+  "url":"https://danman23m-cmyk.github.io/EverydayCalculator/percentage-calculator.html",
+  "applicationCategory":"Calculator",
+  "operatingSystem":"All",
+  "description":"A free online percentage calculator for finding what percent one number is of another."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"How do you calculate a percentage?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"To calculate what percentage one number is of another, divide the part by the whole and multiply by 100. For example, 25 divided by 100 multiplied by 100 equals 25%."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What is 25% of 100?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"25% of 100 is 25."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How do I find what percent one number is of another?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Divide the first number by the second number and multiply the result by 100. For example, 30 divided by 120 multiplied by 100 equals 25%."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can I use this percentage calculator on my phone?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. The percentage calculator works in modern desktop and mobile web browsers."
+      }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="index.html">Everyday Calculator</a>
+
+    <nav class="navlinks">
+      <a href="index.html">Calculators</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <div class="tool">
+
+      <h1>Percentage Calculator</h1>
+
+      <p>
+        Quickly find what percentage one number is of another.
+        Enter the part and whole below to calculate the percentage.
+      </p>
+
+      <div class="form-grid">
+
+        <div>
+          <label for="part">Part</label>
+          <input
+            id="part"
+            type="number"
+            step="any"
+            placeholder="25"
+          >
+        </div>
+
+        <div>
+          <label for="whole">Whole</label>
+          <input
+            id="whole"
+            type="number"
+            step="any"
+            placeholder="100"
+          >
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="percentage()">
+          Calculate Percentage
+        </button>
+      </div>
+
+      <div id="result" class="result"></div>
+
+    </div>
+
+    <section class="info">
+
+      <h2>How to Calculate a Percentage</h2>
+
+      <p>
+        A percentage shows how much one number represents out of another.
+        The basic percentage formula is:
+      </p>
+
+      <p>
+        <strong>Percentage = (Part ÷ Whole) × 100</strong>
+      </p>
+
+      <h3>Example</h3>
+
+      <p>
+        Suppose you scored 25 points out of 100.
+      </p>
+
+      <p>
+        Percentage = (25 ÷ 100) × 100 = <strong>25%</strong>
+      </p>
+
+      <h3>How to Use This Calculator</h3>
+
+      <p>
+        <strong>1.</strong> Enter the number you have in the Part field.
+      </p>
+
+      <p>
+        <strong>2.</strong> Enter the total amount in the Whole field.
+      </p>
+
+      <p>
+        <strong>3.</strong> Click <strong>Calculate Percentage</strong>.
+      </p>
+
+      <p>
+        Your percentage will appear immediately.
+      </p>
+
+      <h2>When Is a Percentage Calculator Useful?</h2>
+
+      <p>
+        Percentages are used in many everyday situations, including
+        test scores, grades, discounts, statistics, finances, tips,
+        sales, and comparing amounts.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How do you calculate a percentage?</h3>
+
+      <p>
+        Divide the part by the whole and multiply by 100.
+      </p>
+
+      <h3>What is 25% of 100?</h3>
+
+      <p>
+        25% of 100 is 25.
+      </p>
+
+      <h3>What percent is 30 of 120?</h3>
+
+      <p>
+        (30 ÷ 120) × 100 = <strong>25%</strong>.
+      </p>
+
+      <h3>Can I use this calculator on my phone?</h3>
+
+      <p>
+        Yes. The calculator works on both desktop and mobile browsers.
+      </p>
+
+      <h2>Related Calculators</h2>
+
+      <p>
+        <a href="tip-calculator.html">Tip Calculator</a> ·
+        <a href="discount-calculator.html">Discount Calculator</a> ·
+        <a href="sales-tax-calculator.html">Sales Tax Calculator</a> ·
+        <a href="average-calculator.html">Average Calculator</a>
+      </p>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  Everyday Calculator — Free online calculators for everyday life.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
